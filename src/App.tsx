@@ -1,5 +1,6 @@
+import { Cloud, Hash, Instagram, Linkedin, Link as LinkIcon, Twitter, Users, Youtube } from 'lucide-react';
 import React, { useState } from 'react';
-import { Users, Twitter, Instagram, Youtube, Linkedin, Link as LinkIcon, Hash, Cloud } from 'lucide-react';
+import { Footer } from "./Footer";
 
 type Platform = 'twitter' | 'instagram' | 'youtube' | 'linkedin' | 'farcaster' | 'bluesky';
 
@@ -90,7 +91,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-3 sm:p-6">
+    <div>
+    <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-3 sm:p-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-6 sm:mb-8">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">Social Media Bio Writer</h1>
@@ -206,6 +208,8 @@ function App() {
           </div>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 }
